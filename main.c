@@ -62,11 +62,11 @@ int SDL_main(int c, char* argv[]) {
     fatal("Failed to get screen size");
   }
   SDL_Window* window = SDL_CreateWindow(
-  	"ScreenSaver",
-  	0,
-  	0,
-  	dm.w,
-  	dm.h,
+    "ScreenSaver",
+    0,
+    0,
+    dm.w,
+    dm.h,
 #ifdef IS_WINDOWS
     SDL_WINDOW_ALLOW_HIGHDPI | SDL_WINDOW_BORDERLESS | SDL_WINDOW_INPUT_GRABBED
 #else
