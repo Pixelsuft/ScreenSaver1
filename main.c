@@ -82,7 +82,7 @@ int SDL_main(int c, char* argv[]) {
   SDL_VERSION(&wm_info.version);
   SDL_GetWindowWMInfo(window, &wm_info);
   HWND hwnd = wm_info.info.win.window;
-  if (hwnd == NULL) {
+  if (hwnd != NULL) {
     SetForegroundWindow(hwnd);
   }
 #endif
