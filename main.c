@@ -115,8 +115,10 @@ int SDL_main(int c, char* argv[]) {
     while (SDL_PollEvent(&event)) {
       if (
         event.type == SDL_QUIT ||
+        event.type == SDL_MOUSEBUTTONUP ||
         event.type == SDL_MOUSEBUTTONDOWN ||
-        event.type == SDL_KEYUP
+        event.type == SDL_KEYUP ||
+        event.type == SDL_KEYDOWN
       ) {
         running = SDL_FALSE;
       }
